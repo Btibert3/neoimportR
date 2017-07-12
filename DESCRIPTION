@@ -1,0 +1,12 @@
+Package: neoimportR
+Title: Utilities to import data into Neo4j
+Version: 0.0.0.9000
+Authors@R: person("Brock", "Tibert", email = "btibert3@gmail.com", role = c("aut", "cre"))
+Description: Basic Neo4j server management and data import utilities.
+Depends: R (>= 3.3.1)
+License: What license is it under?
+Encoding: UTF-8
+LazyData: true
+Remotes: 
+    nicolewhite/RNeo4j
+RoxygenNote: 6.0.1
