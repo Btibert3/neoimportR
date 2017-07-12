@@ -8,6 +8,6 @@
 neo_read_cypher = function(cypher_file) {
   ## if cypher file is not defined, yell
   stopifnot(is.character(cypher_file))
-  cypher = readChar(cypher_file, file.info(sql_file)$size)
+  cypher = readChar(cypher_file, file.info(cypher_file)$size)
   return(cypher)
 }

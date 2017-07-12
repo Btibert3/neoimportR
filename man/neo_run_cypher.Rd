@@ -4,12 +4,15 @@
 \alias{neo_run_cypher}
 \title{Using the shell, import a cypher file you have on disk}
 \usage{
-neo_run_cypher(neo_path = "~/neo4j-community-3.2.0", cql)
+neo_run_cypher(neo_path = "~/neo4j-community-3.2.0",
+  neo_tool = "bin/neo4j-shell", cql)
 }
 \arguments{
 \item{neo_path}{character. The path for the neo4j install}
 
-\item{cql}{character. A path to the cypher file which can contain multiple commands to}
+\item{neo_tool}{character. The sub-directory for the shell tool where we can pass cypher statements to a running server instance.}
+
+\item{cql}{character. A path to the cypher file which can contain multiple commands, just end each statement with a ";"}
 }
 \description{
 Import data into a running neo4j server using cypher via the shell import tool
